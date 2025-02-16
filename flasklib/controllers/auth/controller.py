@@ -1,8 +1,6 @@
 from flask_restful import reqparse
 from flasklib.controllers.common.base_route import BaseRoute
 
-parser: reqparse.RequestParser = reqparse.RequestParser()
-
 
 class UserController(BaseRoute):
     @BaseRoute.base_exception_res

@@ -4,16 +4,16 @@ from flasklib.controllers.common.base_route import BaseRoute
 parser: reqparse.RequestParser = reqparse.RequestParser()
 
 
-class UserController(BaseRoute):
+class DmController(BaseRoute):
     @BaseRoute.base_exception_res
     def get(self, id: int):
-        print('Userの取得')
+        print('DMの取得')
 
     def post(self):
-        print('Userの登録')
+        print('DMの登録')
 
     def put(self, id: int):
-        print('Userの編集')
+        print('DMの編集')
 
     def delete(self, id: int):
-        print('Userの削除')
+        print('DMの削除')

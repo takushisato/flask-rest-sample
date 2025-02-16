@@ -4,16 +4,16 @@ from flasklib.controllers.common.base_route import BaseRoute
 parser: reqparse.RequestParser = reqparse.RequestParser()
 
 
-class UserController(BaseRoute):
+class LikingController(BaseRoute):
     @BaseRoute.base_exception_res
     def get(self, id: int):
-        print('Userの取得')
+        print('likingの取得')
 
     def post(self):
-        print('Userの登録')
+        print('likingの登録')
 
     def put(self, id: int):
-        print('Userの編集')
+        print('likingの編集')
 
     def delete(self, id: int):
-        print('Userの削除')
+        print('likingの削除')
